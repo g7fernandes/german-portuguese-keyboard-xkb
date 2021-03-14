@@ -91,6 +91,8 @@ Após instalar, reinicie. O layout deve aparecer nas opções. No Gnome:
 
 Configurações > Região e Linguagem > +
 
+![Choose German and find German(portuguese) variant](language.png)
+
 ## References
 
 1. [Make your own custom keyboard layout for Linux](https://ubuntu-mate.community/t/make-your-own-custom-keyboard-layout-for-linux/19733)
