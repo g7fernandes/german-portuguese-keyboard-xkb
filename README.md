@@ -1,6 +1,6 @@
 # German Portuguese Keyboard Layout
 
-This repository contains files that can be used to include a new variant to the German keyboard layout for Linux (or any other thing that use xkb for keyboard layout).
+This repository contains files that can be used to include a new variant to the German keyboard layout for Linux (or any other thing that use xkb for keyboard layout) and facilitate typingin portuguese.
 
 In the German standard layout, the tilde (~) is not a dead key and if you set it as dead key, it will still be hard to type due its position in the keyboard. Also, when typing syllables like "ção", it would be required key combinations for the dead key.
 
