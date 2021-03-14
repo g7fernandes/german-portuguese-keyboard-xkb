@@ -9,6 +9,13 @@ else
     echo "Using custom XKB_PATH: $XKB_PATH"
 fi
 
+if [ ! -d $XKB_PATH ]; then
+    echo "xkb folder not found at $XKB_PATH"
+    echo "Pass the location of 'xkb' with"
+    echo "XKB_PATH=/pathTo/xkb ./install"
+    exit 2
+fi
+
 exit_on_error() {
     if [ $1 -ne 0 ]; then
         echo "Error: Could not edit file $2"
