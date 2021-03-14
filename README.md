@@ -24,7 +24,7 @@ As variantes propostas aqui fazem as teclas \<AC10\> e \<AC11\> (depois de <kbd>
 
 Opcionalmente eu também forneço um layout para a tecla\<AC02\> digitar `ç` ao invés de `ß`, e configura <kbd>S</kbd> para digitar `ß`. Cheque o arquivo `de-symbols-keep-eszett`. Renomeie-o para `de` se instalando manualmente.
 
-Eu deixei o <kbd>Z</kbd> no meio do teclado pois em português a letra Z é muito mais comum que Y (raro).
+Eu deixei o <kbd>Z</kbd> no meio do teclado, pois em português a letra Z é muito mais comum que Y (raro).
 
 ### Vantagens:
 
