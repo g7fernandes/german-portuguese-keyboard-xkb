@@ -1,6 +1,13 @@
 #!/bin/bash
 
-XKB_PATH="/usr/share/X11/xkb"
+# The default path to xkb is the one below.
+# You can use the 'tests' directory for testing:
+# XKB_PATH=tests/xkb ./install.sh
+if [ -z $XKB_PATH ]; then
+    XKB_PATH="/usr/share/X11/xkb"
+else
+    echo "Using custom XKB_PATH: $XKB_PATH"
+fi
 
 exit_on_error() {
     if [ $1 -ne 0 ]; then
