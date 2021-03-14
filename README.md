@@ -30,6 +30,9 @@ Eu deixei o <kbd>Z</kbd> no meio do teclado pois em português a letra Z é muit
 
 As letras acentuadas frequentemente `ã` e `õ` são digitadas numa única teclada (melhor ainda que o teclado ABNT brasileiro) e assim como o ABNT brasileiro, o `Ç` pode ganhar uma tecla dedicada.
 
+![Option with ç](layout_with_cedilla.png )
+Option with **ç** replacing **ß**
+
 ## Install / Instalação
 
 ### Automaticamente / Automatic
