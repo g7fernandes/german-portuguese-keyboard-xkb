@@ -1,0 +1,12 @@
+xkb_symbols "portuguese" {
+    // previous standard German layout with tilde as dead key
+
+    include "de(basic)"
+    name[Group1]="German (portuguese chars)";
+
+    key <AD12>	{ [      plus,   asterisk,   dead_tilde,  dead_macron ]	};
+    key <AC10>	{ [    otilde,     Otilde,   odiaeresis,   Odiaeresis ] };
+    key <AC11>	{ [    atilde,     Atilde,   adiaeresis,   Adiaeresis ] };
+};
+
+partial alphanumeric_keys
