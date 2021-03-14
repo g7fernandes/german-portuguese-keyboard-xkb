@@ -35,11 +35,11 @@ EOF
 }
 
 create_backups() {
-    sudo cp $XKB_PATH/symbols/de $XKB_PATH/symbols/de.BKP
-    sudo cp $XKB_PATH/rules/base.lst $XKB_PATH/rules/base.lst.BKP
-    sudo cp $XKB_PATH/rules/evdev.lst $XKB_PATH/rules/evdev.lst.BKP
-    sudo cp $XKB_PATH/rules/base.xml $XKB_PATH/rules/base.xml.BKP
-    sudo cp $XKB_PATH/rules/evdev.xml $XKB_PATH/rules/evdev.xml.BKP
+    sudo cp -n $XKB_PATH/symbols/de $XKB_PATH/symbols/de.BKP
+    sudo cp -n $XKB_PATH/rules/base.lst $XKB_PATH/rules/base.lst.BKP
+    sudo cp -n $XKB_PATH/rules/evdev.lst $XKB_PATH/rules/evdev.lst.BKP
+    sudo cp -n $XKB_PATH/rules/base.xml $XKB_PATH/rules/base.xml.BKP
+    sudo cp -n $XKB_PATH/rules/evdev.xml $XKB_PATH/rules/evdev.xml.BKP
 }
 
 revert() {
@@ -124,6 +124,11 @@ while true; do
     esac
     shift
 done
+
+# Avoids extending exsisting files.
+if [ -f $XKB_PATH/symbols/de.BKP ]; then
+    revert
+fi
 
 create_backups
 
