@@ -132,6 +132,11 @@ while true; do
     shift
 done
 
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
 # Avoids extending exsisting files.
 if [ -f $XKB_PATH/symbols/de.BKP ]; then
     revert
